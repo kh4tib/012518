@@ -1,0 +1,38 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+    background-color: #161616;
+}
+
+.container {
+    display: flex;
+    height:100%;
+    width: 100%;
+    justify-content: center;
+}
+.oval {
+    width: 72px;;
+    height:72px;
+    background-color: #DDD6F3;
+    border-radius: 48px;
+    position: relative;
+    top: 360px;
+}
+
+.oval svg {
+   fill: #161616;
+   position: absolute;
+   right:24px;
+   top:24px;
+   transition: 300ms;
+}
+
+.oval svg:hover {
+    transform: rotate(45deg);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    -o-animation-play-state: paused;
+}
